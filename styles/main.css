@@ -1,0 +1,112 @@
+body {
+  /*
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  simplified version of above*/
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  /*padding is inside element; included in element's click region*/
+  padding:0;
+  /*margin is outside element; not included in element's click region.
+  margins overlap with eachother.*/
+  margin:0;
+  /*bg colour*/
+  background:#fffaf7
+}
+
+/* global stuff*/
+.container {
+  /*the width of the container page will always fill 80% (given value)
+  of the screen.*/
+  width: 80%;
+  /*in combination with declaring width, the auto margin keyword
+  horizontally centers the container with the given width.*/
+  margin: auto;
+  /*the overflow property specifies what to do when the content of
+  the container overflows. in this case, the overflowing content will
+  be hidden.*/
+  overflow: hidden;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+header {
+  background: #514e5b;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  /*this shorthand creates a specifically coloured 3px solid border.*/
+  border-bottom: #d65959 3px solid;
+  /*property of how list items will be stylized; i.e. dots, nums, etc.*/
+  list-style-type: none;
+}
+
+header a {
+  color: #ffffff;
+  /*property that specifies the stylization*/
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a{
+  color:#d65959;
+  font-weight:bold;
+}
+
+header a:hover {
+  color: #fffaf7;
+  font-weight: bold;
+}
+
+/* showcase */
+#showcase {
+  min-height: 400px;
+  background:url('../img/showcase.jpg') no-repeat 0 -100px;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+#showcase .container {
+  position: absolute;               /* 2 */
+  left: 10%;
+  top: 30%;                         /* 3 */
+}
+
+/* boxes*/
+#boxes .container .box{
+  display: inline-block;
+  float: left;
+  padding: 9%;
+  width: 30%;
+  max-width: 200px;
+}
+
+/* footer */
+footer{
+  text-align: center;
+}
