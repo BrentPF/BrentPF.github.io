@@ -108,7 +108,7 @@ header a:hover {
 
 /*portfolio and about stuff*/
 #opener p {
-	width: 80%;
+	padding: 5% 15%;
 	text-align: center;
 }
 
