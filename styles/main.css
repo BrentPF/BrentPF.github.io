@@ -110,13 +110,18 @@ header a:hover {
 }
 
 /* boxes*/
-#boxes .container .box{
+#boxes .container{
+text-align: center;
+}
+
+#boxes .box{
   display: inline-block;
-  float: left;
-  padding: 50px;
-  
+  margin: 40px;
+  vertical-align:top;
   max-width: 400px;
 }
+
+
 
 /*portfolio and about stuff*/
 #opener {
