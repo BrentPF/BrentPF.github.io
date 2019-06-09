@@ -14,6 +14,13 @@ window.onload = function() {
     }
   };
 
+function setTransition(){
+    var refs = document.getElementsByTagName("a");
+    for (var i = 0; i < refs.length; i++){
+        refs[i].style.transitionDuration = "0s";
+    }
+}
+
 function moveRight(screenWindow) {
     screenWindow.style.left = "50%";
     setTimeout(growDown, transitionTime, screenWindow);
@@ -26,9 +33,12 @@ function growDown(screenWindow){
 
 function printText(screenBody){
     screenWindow.style.overflow = "auto";
-    screenBody.style.color = "black";
-    screenBody.style.color = "white";
-    setTimeout(printName, typeSpeed, signature, ">\xa0Brent\xa0P.F.", 0);
+    signature.innerText = ">\xa0";
+    var refs = document.getElementsByTagName("a");
+    for (var i = 0; i < refs.length; i++){
+        refs[i].className = "open";
+    }
+    setTimeout(printName, typeSpeed, signature, "Brent\xa0P.F.", 0);
 }
 //id is "About" etc.
 function printLinks(links){

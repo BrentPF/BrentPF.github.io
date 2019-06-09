@@ -1,6 +1,11 @@
 a {
-  color: white;
+  color: black;
   text-decoration: none;
+  transition: color 1.5s;
+}
+
+a.open {
+  color: white;
 }
 
 a:hover {
