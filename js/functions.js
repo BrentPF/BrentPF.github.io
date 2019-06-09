@@ -11,6 +11,11 @@ window.onload = function() {
     screenText = document.getElementById("screenText");
     if (screenWindow!=null){
         moveRight(screenWindow);
+    } else {
+        var refs = document.getElementsByTagName("a");
+        for (var i = 0; i < refs.length; i++){
+            refs[i].className = "open";
+        }
     }
   };
 
