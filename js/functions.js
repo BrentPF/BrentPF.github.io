@@ -9,7 +9,9 @@ window.onload = function() {
     signature = document.getElementById("Name");
     screenWindow = document.getElementById("screen");
     screenText = document.getElementById("screenText");
-    moveRight(screenWindow);
+    if (screenWindow!=null){
+        moveRight(screenWindow);
+    }
   };
 
 function moveRight(screenWindow) {
