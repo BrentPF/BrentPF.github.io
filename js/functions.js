@@ -2,28 +2,28 @@ var links = ["About", "Portfolio", "Contact"];
 var typeSpeed = 100;
 var transitionTime = 1500;
 var signature;
-var screen;
+var screenWindow;
 var screenText;
 
 window.onload = function() {
     signature = document.getElementById("Name");
-    screen = document.getElementById("screen");
+    screenWindow = document.getElementById("screen");
     screenText = document.getElementById("screenText");
-    moveRight(screen);
+    moveRight(screenWindow);
   };
 
-function moveRight(screen) {
-    screen.style.left = "50%";
-    setTimeout(growDown, transitionTime, screen);
+function moveRight(screenWindow) {
+    screenWindow.style.left = "50%";
+    setTimeout(growDown, transitionTime, screenWindow);
 }
 
-function growDown(screen){
-    screen.style.height = "80%";
+function growDown(screenWindow){
+    screenWindow.style.height = "80%";
     setTimeout(printText, transitionTime, screenText);
 }
 
 function printText(screenBody){
-    screen.style.overflow = "auto";
+    screenWindow.style.overflow = "auto";
     screenBody.style.color = "black";
     screenBody.style.color = "white";
     setTimeout(printName, typeSpeed, signature, ">\xa0Brent\xa0P.F.", 0);
